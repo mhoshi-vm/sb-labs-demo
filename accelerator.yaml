@@ -12,6 +12,12 @@ accelerator:
       description: app name
       defaultValue: webapp
       required: true
+    - name: gitRepo
+      inputType: text
+      label: git repo of app
+      description: git repo
+      defaultValue: webapp
+      required: true
 engine:
   merge:
     - include: [ "**" ]
@@ -28,3 +34,7 @@ engine:
           substitutions:
             - text: "CHANGEME"
               with: "#appName"
+        - type: ReplaceText
+          substitutions:
+            - text: "GITREPO"
+              with: "#gitRepo"
