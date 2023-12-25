@@ -1,9 +1,9 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: tap-labs-demo
+  name: java-to-ecs-CHANGEME
   annotations:
-    backstage.io/kubernetes-label-selector: 'app.kubernetes.io/part-of=labs'
+    backstage.io/kubernetes-label-selector: 'app.kubernetes.io/part-of=CHANGEME'
 spec:
   type: service
   lifecycle: unknown

@@ -1,0 +1,30 @@
+accelerator:
+  displayName: Java to AWS ECS
+  description: Java to AWS ECS
+  tags:
+    - java
+    - ecs
+  # options for the UI
+  options:
+    - name: appName
+      inputType: text
+      label: app name of app
+      description: app name
+      defaultValue: webapp
+      required: true
+engine:
+  merge:
+    - include: [ "**" ]
+      exclude: [ "catalog.yaml", "workload.yaml"]
+    - include: [ "catalog.yaml" ]
+      chain:
+        - type: ReplaceText
+          substitutions:
+            - text: "CHANGEME"
+              with: "#appName"
+    - include: [ "workload.yaml" ]
+      chain:
+        - type: ReplaceText
+          substitutions:
+            - text: "CHANGEME"
+              with: "#appName"
