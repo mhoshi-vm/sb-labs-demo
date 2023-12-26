@@ -1,6 +1,7 @@
 accelerator:
   displayName: Java to AWS ECS
   description: Java to AWS ECS
+  iconUrl: https://blog.lespaulstudioplus.info/images/33/img_6.png
   tags:
     - java
     - ecs

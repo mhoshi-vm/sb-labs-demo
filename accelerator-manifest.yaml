@@ -3,7 +3,6 @@ kind: Accelerator
 metadata:
   name: java-to-ecs
   namespace: accelerator-system
-  iconUrl: https://blog.lespaulstudioplus.info/images/33/img_6.png
 spec:
   git:
     ref:
