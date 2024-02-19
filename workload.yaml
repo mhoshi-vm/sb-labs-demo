@@ -19,7 +19,7 @@ spec:
     - name: gitops_repository_owner
       value: mhoshi-vm
     - name: gitops_repository_name
-      value: GITREPO
+      value: tap-config
   source:
     git:
       ref:
