@@ -1,10 +1,10 @@
 accelerator:
-  displayName: Java to AWS ECS
-  description: Java to AWS ECS
-  iconUrl: https://blog.lespaulstudioplus.info/images/33/img_6.png
+  displayName: Java to AWS EKS
+  description: Java to AWS EKS
+  iconUrl: https://www.solo.io/wp-content/uploads/2023/04/Arch_Amazon-Elastic-Container-Kubernetes.svg
   tags:
     - java
-    - ecs
+    - eks
   # options for the UI
   options:
     - name: appName
@@ -38,4 +38,4 @@ engine:
         - type: ReplaceText
           substitutions:
             - text: "GITREPO"
-              with: "#gitRepo"
+              With: "#gitRepo"
