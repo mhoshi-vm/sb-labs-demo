@@ -38,4 +38,4 @@ engine:
         - type: ReplaceText
           substitutions:
             - text: "GITREPO"
-              With: "#gitRepo"
+              with: "#gitRepo"
